@@ -1,12 +1,14 @@
 const dino = document.getElementById('dino');
 const rock = document.getElementById('rock');
 const score = document.getElementById('score');
+const choice1 = document.getElementById('choice1');
+const choice2 = document.getElementById('choice2');
 
 function jump() {
-    dino.classList('jump-animation');
+    dino.classList.add('jump-animation');
     setTimeout(() => {
         dino.classList.remove('jump-animation');
-    }, 500)
+    }, 500);
 }
 
 document.addEventListener('keypress', () => {
@@ -15,14 +17,26 @@ document.addEventListener('keypress', () => {
     }
 });
 
-setInterval(() => {
-    score.innerText++;
+
+
+
+let intervalOne;
+
+intervalOne = setInterval(() => {
+    if (score.innerText >= 100) {
+        rock.style.animation = "none";
+        clearInterval(intervalOne);
+    } else{
+        score.innerText++;
+    }
     const dinoTop = parseInt(window.getComputedStyle(dino)
         .getPropertyValue('top'));
     const rockLeft = parseInt(window.getComputedStyle(rock)
         .getPropertyValue('left'));
-    if (rockLeft < 0) rock.style.display = 'none';
-    } else{
+
+    if (rockLeft < 0) { 
+        rock.style.display = 'none';
+    } else {
         rock.style.display = '';
     }
 

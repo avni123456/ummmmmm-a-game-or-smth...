@@ -11,6 +11,25 @@
     background-size: cover;
 }
 
+#ptag {
+    position: absolute;
+    font-family: "Sour Gummy";
+}
+
+.container {
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    top: 75px;
+    left: 125px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
 #dino {
     height: 75px;
     width: 75px;
@@ -28,7 +47,29 @@
     left: 550px;
     background-image: url("seaweed.png");
     background-size: cover;
-    animation:rock 1.33s infinite;
+    animation: rock 1.33s infinite;
+}
+
+#choice1 {
+    width: 200px;
+    height:  75px;
+    background-color:rgb(62, 69, 148);
+    border: 5px solid rgba(255, 255, 255, 0.152);
+    border-radius: 10px;
+    font-family: "Sour Gummy";
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+#choice2 {
+    width: 200px;
+    height: 75px;
+    background-color:rgb(75, 131, 150);
+    border: 5px solid rgba(255, 255, 255, 0.152);
+    border-radius: 10px;
+    font-family: "Sour Gummy";
+    color:rgb(255, 255, 255);
+    text-align: center;
 }
 
 @keyframes rock {
