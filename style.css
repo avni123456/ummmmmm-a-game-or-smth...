@@ -14,6 +14,7 @@
 #ptag {
     position: absolute;
     font-family: "Sour Gummy";
+    display: none;
 }
 
 .container {
@@ -21,11 +22,42 @@
     height: 150px;
     position: absolute;
     top: 75px;
-    left: 125px;
-    background-color: black;
-    display: flex;
+    left: 160px;
+    background-color: rgba(0, 0, 0, 0.43);
+    display: none;
     justify-content: space-around;
     align-items: center;
+    border-radius:10px;
+}
+
+.ending1 {
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    top: 75px;
+    left: 160px;
+    background-color: rgb(223, 206, 138);
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    font-family:"Sour Gummy";
+    font-size:20px;
+}
+
+.ending2 {
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    top: 75px;
+    left: 160px;
+    background-color: rgb(120, 170, 172);
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    font-family:"Sour Gummy";
+    font-size:20px;
 }
 
 
@@ -51,7 +83,7 @@
 }
 
 #choice1 {
-    width: 200px;
+    width: 150px;
     height:  75px;
     background-color:rgb(62, 69, 148);
     border: 5px solid rgba(255, 255, 255, 0.152);
@@ -59,10 +91,11 @@
     font-family: "Sour Gummy";
     color:rgb(255, 255, 255);
     text-align: center;
+    font-size:30px;
 }
 
 #choice2 {
-    width: 200px;
+    width: 150px;
     height: 75px;
     background-color:rgb(75, 131, 150);
     border: 5px solid rgba(255, 255, 255, 0.152);
@@ -70,6 +103,7 @@
     font-family: "Sour Gummy";
     color:rgb(255, 255, 255);
     text-align: center;
+    font-size:50px;
 }
 
 @keyframes rock {
