@@ -48,7 +48,7 @@ choice2.addEventListener('click', () => {
 let intervalOne;
 
 intervalOne = setInterval(() => {
-    if (score.innerText >= 10) {
+    if (score.innerText >= 1000) {
         rock.style.animation = "none";
         container.style.display = "flex"
         ptag.style.display = "block"
